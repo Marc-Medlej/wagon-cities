@@ -11,10 +11,6 @@ class CityList extends Component {
     } 
 
 
-    constructor(props) {
-        super(props);
-    };
-
     renderList = () => {
         return this.props.cities.map((city) => {
           return (

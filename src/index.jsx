@@ -9,9 +9,11 @@ import App from './components/app';
 import '../assets/stylesheets/application.scss';
 
 // State and reducers
-import citiesReducer from './reducers/cities_reducer'
+import CitiesReducer from './reducers/cities_reducer'
+import ActiveCityReducer from './reducers/active_city_reducer';
 const reducers = combineReducers({
-  cities: citiesReducer
+  cities: CitiesReducer,
+  activeCity: ActiveCityReducer
 });
 
 // render an instance of the component in the DOM
